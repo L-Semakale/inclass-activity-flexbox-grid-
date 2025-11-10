@@ -1,1 +1,124 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* GLOBAL */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: #455a64;
+  color: white;
+  text-align: center;
+  padding: 60px 20px 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* NAVIGATION */
+nav {
+  background: #455a64;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.05rem;
+  margin: 0 35px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* SECTION BOXES */
+.section {
+  width: 95%;
+  max-width: 1100px;
+  margin: 35px auto;
+  background: white;
+  padding: 35px 45px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+.section h2 {
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+/* PROJECT CARDS */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.project-card {
+  background: #e6e6e6;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+/* CONTACT FORM */
+form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-top: 8px;
+  margin-bottom: 25px;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background: #455a64;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #37474f;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+}
